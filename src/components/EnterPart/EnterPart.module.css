@@ -1,0 +1,9 @@
+.groupWrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.navItem {
+  color: #ffffff;
+  text-decoration: none;
+}

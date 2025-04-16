@@ -1,0 +1,58 @@
+.contactInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.colorfulBackground {
+  padding: 4px;
+  display: flex;
+  place-items: center;
+  border-radius: 4px;
+}
+
+.additionalBtns {
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn {
+  padding: 8px;
+  background-color: #008fbf;
+}
+
+.deleteBtn {
+  padding: 8px;
+  background-color: #d40000;
+}
+
+.modalContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.modalQuestion {
+  color: #000000;
+  font-weight: 500;
+}
+
+.modalName {
+  font-weight: 800;
+}
+
+.modalBtns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.modalBtn {
+  padding: 12px 28px;
+}
+
+.modalBtnYes {
+  background-color: #d40000;
+}

@@ -1,0 +1,21 @@
+.navWrapper {
+  width: 100vw;
+  box-shadow: 0 5px 5px #4a4a4a;
+  position: absolute;
+  top: 0;
+  background-color: #2e2e2e;
+  padding: 12px 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.groupWrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.navItem {
+  color: #ffffff;
+  text-decoration: none;
+}

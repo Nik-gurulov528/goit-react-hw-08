@@ -1,0 +1,10 @@
+.groupWrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.logoutBtn {
+  background-color: #d40000;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
