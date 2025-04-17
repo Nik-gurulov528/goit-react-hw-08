@@ -48,19 +48,19 @@ export const logout = createAsyncThunk('auth/logout', async (_, thunkAPI) => {
 export const refreshUser = createAsyncThunk(
   'auth/refresh',
   async (_, thunkAPI) => {
-    const state = thunkAPI.getState();
-    const savedToken = state.auth.token;
-
-    if (savedToken === null) {
-      return thunkAPI.rejectWithValue('User didnot log in!');
-    }
-
     try {
-      setHeaderToken(savedToken);
+      const savedToken = thunkAPI.getState();
+      setHeaderToken(savedToken.auth.token);
       const getUserData = await axios.get('users/current');
       return getUserData.data;
     } catch (error) {
       return thunkAPI.rejectWithValue(error.message);
     }
+  },
+  {
+    condition: (_, thunkAPI) => {
+      const savedToken = thunkAPI.getState();
+      return savedToken.auth.token !== null && savedToken.auth.token !== '';
+    },
   }
 );
