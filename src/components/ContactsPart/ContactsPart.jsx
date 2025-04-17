@@ -8,10 +8,10 @@ import {
   selectIsChanging,
   selectLoading,
   selectStatus,
-} from './../../redux/contacts/contactsSelectors';
+} from './../../redux/contacts/selectors';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { getData } from '../../redux/contacts/contactsOps';
+import { getData } from '../../redux/contacts/operations';
 import toast, { Toaster } from 'react-hot-toast';
 
 export default function ContactsPart() {

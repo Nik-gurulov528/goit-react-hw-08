@@ -4,7 +4,7 @@ import {
   deleteContact,
   getData,
   updateContact,
-} from './contactsOps';
+} from './operations';
 
 const handlePending = state => {
   state.loading = true;

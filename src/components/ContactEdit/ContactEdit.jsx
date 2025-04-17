@@ -3,9 +3,9 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
 import { useId } from 'react';
-import { selectChangingItem } from '../../redux/contacts/contactsSelectors';
-import { cancelChanging } from '../../redux/contacts/contactsSlice';
-import { updateContact } from '../../redux/contacts/contactsOps';
+import { selectChangingItem } from '../../redux/contacts/selectors';
+import { cancelChanging } from '../../redux/contacts/slice';
+import { updateContact } from '../../redux/contacts/operations';
 // import toast, { Toaster } from 'react-hot-toast';
 
 export default function ContactEdit() {

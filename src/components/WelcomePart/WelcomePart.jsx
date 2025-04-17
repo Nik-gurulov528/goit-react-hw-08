@@ -1,7 +1,7 @@
 import css from './WelcomePart.module.css';
-import { selectName } from '../../redux/auth/authSelectors';
+import { selectName } from '../../redux/auth/selectors';
 import { useSelector, useDispatch } from 'react-redux';
-import { logout } from '../../redux/auth/authOps';
+import { logout } from '../../redux/auth/operations';
 
 export default function WelcomePart() {
   const enteredName = useSelector(selectName);

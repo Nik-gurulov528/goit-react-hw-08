@@ -8,10 +8,10 @@ import RegistrationPage from './pages/RegistrationForm/RegistrationPage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { refreshUser } from './redux/auth/authOps';
+import { refreshUser } from './redux/auth/operations';
 import PrivateRoute from './pages/PrivateRoute';
 import RestrictedRoute from './pages/RestrictedRoute';
-import { selectIsRefreshing } from './redux/auth/authSelectors';
+import { selectIsRefreshing } from './redux/auth/selectors';
 
 function App() {
   const dispatch = useDispatch();

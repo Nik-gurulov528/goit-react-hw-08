@@ -2,7 +2,7 @@ import css from './LoginForm.module.css';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { useId } from 'react';
 import { useDispatch } from 'react-redux';
-import { login } from './../../redux/auth/authOps';
+import { login } from './../../redux/auth/operations';
 import * as Yup from 'yup';
 
 export default function LoginForm() {

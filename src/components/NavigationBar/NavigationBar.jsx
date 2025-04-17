@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { selectIsLoggedIn } from '../../redux/auth/authSelectors';
+import { selectIsLoggedIn } from '../../redux/auth/selectors';
 import EnterPart from '../EnterPart/EnterPart';
 import WelcomePart from '../WelcomePart/WelcomePart';
 import css from './NavigationBar.module.css';

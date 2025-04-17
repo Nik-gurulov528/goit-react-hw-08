@@ -3,10 +3,10 @@ import { FaUser, FaPhoneAlt } from 'react-icons/fa';
 import { RiDeleteBinLine } from 'react-icons/ri';
 import { MdOutlineModeEdit } from 'react-icons/md';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from '../../redux/contacts/contactsOps';
+import { deleteContact } from '../../redux/contacts/operations';
 import { useRandomColor } from '../../js/useRandomColor';
 import { useRef, useState } from 'react';
-import { getExactContact } from '../../redux/contacts/contactsSlice';
+import { getExactContact } from '../../redux/contacts/slice';
 import Modal from 'react-modal';
 import { BsDisplay } from 'react-icons/bs';
 

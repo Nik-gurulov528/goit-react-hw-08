@@ -2,7 +2,7 @@ import css from './RegistrationPage.module.css';
 import { useId } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/authOps';
+import { register } from '../../redux/auth/operations';
 import * as Yup from 'yup';
 
 export default function RegistrationPage() {
